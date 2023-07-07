@@ -20,6 +20,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<link rel='stylesheet' href='css/scroll.css'>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- ///// Start header \\\\\ -->
@@ -48,7 +50,7 @@
 	<div class="promotion-banner">
 		<div class="banner-content">
 			<h1 class="display-4 wow slideInLeft" 	data-wow-delay="0.18s" data-wow-duration="3500ms">Best Entry Sports Motorcycle</h1>
-			<p class="lead wow bounceIn" data-wow-delay="2s" data-wow-duration="4s"></span> Price starting from <span>Rs 1 29 645</span></p>
+			<p class="lead wow bounceIn" data-wow-delay="1s" data-wow-duration="1s"></span> Price starting from <span>Rs 1 29 645</span></p>
 			<div class="btn-group-p wow zoomIn" data-wow-delay="1s" data-wow-duration="2000ms">
 				<!-- <span class="outer-sh-blk">
 					<a class="btn btn-primary" href="#" role="button">Start 14-days Free Trial</a>
@@ -88,7 +90,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7 col-md-7 col-sm-12 pl-3 pl-md-4 align-self-center item-center-sm">
-				<div class="show-video-content wow animate__backInLeft"data-wow-delay="2s" data-wow-duration="2000ms">
+				<div class="show-video-content wow animate__backInLeft"data-wow-delay="1s" data-wow-duration="2000ms">
 					<div class="h1">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 					</div>
@@ -100,7 +102,7 @@
 				</div>
 			</div>
 			<div class="col-lg-5 col-md-5 col-sm-12">
-				<div class="video-frame mb-4 mb-md-0 wow animate__flipInX" data-wow-delay="2s" data-wow-duration="2000ms">
+				<div class="video-frame mb-4 mb-md-0 wow animate__flipInX" data-wow-delay="1s">
 					<div class="overlay-black"></div>
 					<img class="img-fluid lazy" src="images/video-img.jpg" />
 					<a href="javascript:void(0);" class=""><i class="fa fa-play-circle"></i></a>
@@ -115,12 +117,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-5 col-md-5 col-sm-12">
-				<div class="image-frame mb-4 mb-md-0 wow animate__rotateIn" data-wow-delay="1s" data-wow-duration="2000ms">
+				<div class="image-frame mb-4 mb-md-0 wow animate__rotateIn" data-wow-delay="1s">
 					<img class="img-fluid lazy" src="images/owner.jpg" />
 				</div>
 			</div>
 			<div class="col-lg-7 col-md-7 col-sm-12 pl-3 pl-md-4 align-self-center item-center-sm">
-				<div class="about-owner-content wow animate__flipInY" data-wow-delay="1s" data-wow-duration="2500ms">
+				<div class="about-owner-content wow animate__flipInY" data-wow-delay="1s">
 					<div class="h3">Lorem Ipsum is simply dummy text!</div>
 					<p class="red-text">Bertram Iverson</p>
 					
@@ -129,16 +131,16 @@
 		</div>
 	</div>
 </section>
-<!-- ///// end  \\\\\ -->
+<!-- ///// end  \\\\\ wow animate__slideInLeft -->
 
 <section id="chat-staffing-block" class="chat-staffing">
 	<div class="container-fluid pl-0">
 		<div class="row">
-			<div class="col-md-6 pr-0  wow animate__slideInLeft" data-wow-delay="2s" data-wow-duration="2s">
+			<div id="container" class="col-md-6 pr-0 purple" data-wow-delay="2s" data-wow-duration="2s">
 				<img class="lazy" src="images/s-image.jpg"  />
 			</div>
-			<div class="col-md-6 pr-0 bg-red wow animate__slideInRight" data-wow-delay="2s" data-wow-duration="2s">
-				<div class="chat-staffing p-5">
+			<div class="col-md-6 pr-0 bg-red orange" data-wow-delay="2s" data-wow-duration="2s">
+				<div id="container" class="chat-staffing p-5">
 					<div class="staffing-inner-content">
 						<h4>Lorem Ipsum is simply dummy text!</h4>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
@@ -195,11 +197,10 @@
 
 
 
-
 	
 <div id="bound-three" class="scroll-bound">
 	<div class="content">
-		<video width="600" muted preload>
+		<video width="600" muted preload class="wow animate__slideInLeft purple" data-wow-delay="1s" data-wow-duration="1s">
 			<source
 				src="https://www.apple.com/media/us/mac-pro/2013/16C1b6b5-1d91-4fef-891e-ff2fc1c1bb58/videos/macpro_main_desktop.mp4"
 				type="video/mp4">
@@ -266,6 +267,11 @@ window.requestAnimationFrame(scrollPlay);
 
 		registerVideo("#bound-three", "#bound-three video")
 </script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/ScrollToPlugin.min.js'></script>
+
+
 <script src="js/jquery-3.2.1.min.js"></script>
 
 <script src="js/popper.min.js"></script>
@@ -282,6 +288,13 @@ window.requestAnimationFrame(scrollPlay);
 </script>
 <!-- custom js -->
 <script src="js/custom.js"></script>
+
+<!-- On scroll animation -->
+<script src='js/gsap-latest-beta.min.js'></script>
+<script src='js/scrollTrigger.min.js'></script>
+<script src='js/scrollToPlugin.min.js'></script>
+<script src="js/script.js"></script>
+
 
 
 </body>
